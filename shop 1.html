@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url("../images/IMG-20240619-WA0023.jpg");
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      header,
+      footer {
+        background-color: hsl(224, 88%, 60%);
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+      }
+      header ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      header ul li {
+        display: inline;
+        margin: 0 10px;
+      }
+      header ul li a,
+      footer a {
+        color: white;
+        text-decoration: none;
+      }
+      .Hero {
+        text-align: center;
+        padding: 50px 30px;
+        color: black;
+      }
+      .search-bar {
+        font-size: 20px;
+        margin-left: 10px;
+      }
+      .horizotal-scroll-container {
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 00 10px rgba(0, 0, 0, 0);
+      }
+      .horizotal-scroll-container {
+        display: inline block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+
+      .horizotal-scroll-container img {
+        height: 50px;
+        margin-right: 5px;
+      }
+      .horizotal-scroll-container:hover {
+        overflow-x: scroll;
+      }
+
+      .horizotal-scroll-container::-webkit-scrollbar {
+        height: 10px;
+      }
+      .horizotal-scroll-container::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 5px;
+      }
+      .horizotal-scroll-container::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+      }
+      img {
+        height: 200px;
+        display: inline-block;
+      }
+
+      .tabs {
+        display: flex;
+        justify-content: center;
+        background-color: #333;
+      }
+      .tab {
+        padding: 14px 20px;
+        cursor: pointer;
+        color: #fff;
+        background-color: #333;
+        border: none;
+        outline: none;
+      }
+      .tab:hover {
+        background-color: #55b7f4;
+      }
+      .tab-content {
+        display: none;
+        padding: 20px;
+        background-color: #fff;
+        flex-grow: 1;
+      }
+      .tab-content.active {
+        display: block;
+      }
+      .nav-buttons {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">welcome to my service page</div>
+      <h2>Discover the Future of [Your Service</h2>
+      <form action="https://www.google.com/search" method="get">
+        <input class="search-bar" type="text" name="q" placeholder="search" />
+        <button type="submit">search</button>
+      </form>
+
+      <p>
+        Explore how our innovative solutions can transform your business today
+      </p>
+    </header>
+    <section>
+      <h2>Enjoy our products</h2>
+      <div class="horizontal-scroll-container">
+        <div class="tabs">
+          <button class="tab" onclick="showTab(0)">slippers</button>
+          <button class="tab" onclick="showTab(1)">Tops</button>
+          <button class="tab" onclick="showTab(2)">Trousers</button>
+        </div>
+        <div class="tab-content" id="slippers">
+          <h2>
+            Explore the richness of our slippers with prizes ranging from $70 to
+            $100
+          </h2>
+          <img
+            src="../images/IMG-20240712-WA0076.jpg"
+            alt="IMG-20240712-WA0076"
+          />
+          <img
+            src="../images/IMG-20240712-WA0077.jpg"
+            alt="IMG-20240712-WA0077"
+          />
+          <img
+            src="../images/IMG-20240712-WA0078.jpg"
+            alt="IMG-20240712-WA0078"
+          />
+          <img
+            src="../images/IMG-20240712-WA0081.jpg"
+            alt="IMG-20240712-WA0081"
+          />
+          <img
+            src="../images/IMG-20240712-WA0080.jpg"
+            alt="IMG-20240712-WA0113"
+          />
+          <img
+            src="../images/IMG-20240712-WA0115.jpg"
+            alt="IMG-20240712-WA0115"
+          />
+          <img
+            src="../images/IMG-20240712-WA0120.jpg"
+            alt="IMG-20240712-WA0120"
+          />
+          <img
+            src="../images/IMG-20240712-WA0079.jpg"
+            alt="IMG-20240712-WA0087"
+          />
+
+          <img
+            src="../images/IMG-20240712-WA0152.jpg"
+            alt=" IMG-20240712-WA0152"
+          />
+          <img
+            src="../images/IMG-20240712-WA0178.jpg"
+            alt="IMG-20240712-WA0178"
+          />
+          <img
+            src="../images/IMG-20240712-WA0151.jpg"
+            alt="IMG-20240712-WA0151"
+          />
+          <img
+            src="../images/IMG-20240712-WA0075.jpg"
+            alt="IMG-20240712-WA0075"
+          />
+          <img
+            src="../images/IMG-20240712-WA0073.jpg"
+            alt="IMG-20240712-WA0073"
+          />
+        </div>
+        <div class="tab-content" id="tops">
+          <h2>Explore the richness of our tops $50 and $60</h2>
+          <img
+            src="../images/IMG-20240717-WA0000.jpg"
+            alt="IMG-20240712-WA0149"
+          />
+          <img
+            src="../images/IMG-20240712-WA0177.jpg"
+            alt="IMG-20240712-WA0192"
+          />
+          <img
+            src="../images/IMG-20240712-WA0036.jpg"
+            alt="IMG-20240712-WA0193"
+          />
+          <img
+            src="../images/IMG-20240712-WA0038.jpg"
+            alt="IMG-20240712-WA0186"
+          />
+          <img
+            src="../images/IMG-20240717-WA0008.jpg "
+            alt="IMG-20240712-WA0181"
+          />
+          <img
+            src="../images/IMG-20240712-WA0135.jpg"
+            alt="IMG-20240712-WA0135"
+          />
+          <img
+            src="../images/IMG-20240717-WA0006.jpg"
+            alt="IMG-20240712-WA0046"
+          />
+          <img
+            src="../images/IMG-20240712-WA0153.jpg"
+            alt="IMG-20240712-WA0048"
+          />
+          <img
+            src="../images/IMG-20240717-WA0003.jpg"
+            alt="IMG-20240712-WA0052"
+          />
+          <img
+            src="../images/IMG-20240712-WA0142.jpg"
+            alt="IMG-20240712-WA0059"
+          />
+          <img
+            src="../images/IMG-20240712-WA0187.jpg"
+            alt="IMG-20240712-WA0065"
+          />
+          <img
+            src="../images/IMG-20240712-WA0037.jpg"
+            alt="IMG-20240712-WA0037"
+          />
+          <img
+            src="../images/IMG-20240712-WA0142.jpg"
+            alt="IMG-20240712-WA00142"
+          />
+          <img
+            src="../images/IMG-20240717-WA0002.jpg"
+            alt="IMG-20240712-WA00142"
+          />
+        </div>
+        <div class="tab-content" id="trouser">
+          <h2>
+            Explore the richness of our trousers with prizez of $90 and $70
+          </h2>
+          <img
+            src="../images/IMG-20240712-WA0128.jpg"
+            alt="IMG-20240712-WA0128"
+          />
+          <img
+            src="../images/IMG-20240712-WA0192.jpg"
+            alt="IMG-20240712-WA0192"
+          />
+          <img
+            src="../images/IMG-20240712-WA0193.jpg"
+            alt="IMG-20240712-WA0193"
+          />
+
+          <img
+            src="../images/IMG-20240712-WA0130.jpg"
+            alt="IMG-20240712-WA0130"
+          />
+          <img
+            src="../images/IMG-20240712-WA0042.jpg "
+            alt="IMG-20240712-WA0042"
+          />
+          <img
+            src="../images/IMG-20240712-WA0140.jpg"
+            alt="IMG-20240712-WA0140"
+          />
+          <img
+            src="../images/IMG-20240712-WA0046.jpg"
+            alt="IMG-20240712-WA0046"
+          />
+          <img
+            src="../images/IMG-20240712-WA0167.jpg"
+            alt="IMG-20240712-WA0167"
+          />
+          <img
+            src="../images/IMG-20240712-WA0196.jpg"
+            alt="IMG-20240712-WA0052"
+          />
+          <img
+            src="../images/IMG-20240712-WA0059.jpg"
+            alt="IMG-20240712-WA0059"
+          />
+          <img
+            src="../images/IMG-20240712-WA0065.jpg"
+            alt="IMG-20240712-WA0065"
+          />
+          <img
+            src="../images/IMG-20240712-WA0067.jpg"
+            alt="IMG-20240712-WA0067"
+          />
+          <img
+            src="../images/IMG-20240712-WA0003.jpg"
+            alt="IMG-20240712-WA0003"
+          />
+          <img
+            src="../images/IMG-20240712-WA0004.jpg"
+            alt="IMG-20240712-WA0004"
+          />
+          <img
+            src="../images/IMG-20240712-WA0048.jpg"
+            alt="IMG-20240712-WA0048"
+          />
+        </div>
+      </div>
+    </section>
+    <div class="nav-buttons">
+      <button onclick="prevTab()">Previous</button>
+      <button onclick="nextTab()">Next</button>
+    </div>
+    <footer>
+      <p>&copy; 2024 RAHIMZ SERVICES. All rights reserved.</p>
+      <a href="mailto:contact@bnt.com">Contact Us</a>
+    </footer>
+
+    <script>
+      let currentTab = 0;
+      document.addEventListener("DOMContentLoaded", function () {
+        showTab(currentTab);
+      });
+
+      function showTab(n) {
+        const tabs = document.querySelectorAll(".tab-content");
+        tabs.forEach((tab, index) => {
+          tab.classList.remove("active");
+          if (index === n) {
+            tab.classList.add("active");
+          }
+        });
+        currentTab = n;
+      }
+
+      function nextTab() {
+        const tabs = document.querySelectorAll(".tab-content");
+        currentTab = (currentTab + 1) % tabs.length;
+        showTab(currentTab);
+      }
+
+      function prevTab() {
+        const tabs = document.querySelectorAll(".tab-content");
+        currentTab = (currentTab - 1 + tabs.length) % tabs.length;
+        showTab(currentTab);
+      }
+    </script>
+  </body>
+</html>
